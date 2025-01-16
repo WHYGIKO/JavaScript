@@ -1,5 +1,15 @@
 var name = prompt('Ismingizni kiriting: ')
 var age = +prompt('Yoshingizni kiriting: ')
+if (confirm(`Siz kiritgan ma'lumotlarni tasdiqlaysizmi? Ismingiz: ${name} Yoshingiz: ${age}`))
+{ 
+    alert("Ma'lumotlar tasdiqlandi!");
+}
+else {
+    alert("Iltimos, ma'lumotlarni qayta kiriting.");
+    nameAgain = prompt(`Ismingizni kiriting: `)
+    ageAgain = +prompt(`Yoshingizni kiriting: `)
+    confirm(`Siz qayta kiritgan ma'lumotlar: Ismingiz: ${nameAgain} Yoshingiz: ${ageAgain}. Ma'lumotlarni tasdiqlaysizmi?`)
+}
 var a = 6
 var b = 3
 var c = 5
@@ -16,20 +26,7 @@ var answer2 = +prompt(`Amalni bajaring: ${c} - ${e} = ?`)
 var answer3 = +prompt(`Amalni bajaring: ${a} * ${d} = ?` )
 var answer4 = +prompt(`Amalni bajaring: ${d} / ${e} = ?` )
 var answer5 = +prompt(`Amalni bajaring: ${f} % ${e} = ?`)
-if (confirm(`Siz kiritgan ma'lumotlarni tasdiqlaysizmi? Ismingiz: ${name} Yoshingiz: ${age}`))
-{ 
-    alert("Ma'lumotlar tasdiqlandi!");
-}
-else {
-    alert("Iltimos, ma'lumotlarni qayta kiriting.");
-    nameAgain = prompt(`Ismingizni kiriting: `)
-    ageAgain = +prompt(`Yoshingizni kiriting: `)
-    confirm(`Siz qayta kiritgan ma'lumotlar: Ismingiz: ${nameAgain} Yoshingiz: ${ageAgain}. Ma'lumotlarni tasdiqlaysizmi?`)
-}
-
 alert('Javoblarni cansole dan tekshiring!')
-
-
 console.log(`Sizning ismingiz: ${name}`);
 console.log(`Sizning yoshingiz: ${age}`);
 
